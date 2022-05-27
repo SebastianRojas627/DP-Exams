@@ -1,7 +1,5 @@
 package examen1.ejercicio2;
 
-import prototype.structure.ConcretePrototype1;
-
 public class TelevisorSmart implements IPrototype{
 
     public String os;
@@ -12,7 +10,7 @@ public class TelevisorSmart implements IPrototype{
     public int usbPorts;
     public boolean remote;
     public boolean bluetooth;
-    public int serial;
+    public String serial;
 
     public TelevisorSmart() {}
 
@@ -80,28 +78,39 @@ public class TelevisorSmart implements IPrototype{
         this.bluetooth = bluetooth;
     }
 
-    public int getSerial() {
+    public String getSerial() {
         return serial;
     }
 
-    public void setSerial(int serial) {
+    public void setSerial(String serial) {
         this.serial = serial;
     }
 
     public void showInfo() {
-
+        System.out.println("\n *** TELEVISOR SMART ***");
+        System.out.println("OS: " + this.getOs());
+        System.out.println("OS version: " + this.getOsVersion());
+        System.out.println("Pulgadas: " + this.getInches());
+        System.out.println("Resolucion: " + this.getResolution());
+        System.out.println("Puerto HDMI: " + this.isHdmiPort());
+        System.out.println("Puertos USB: " + this.getUsbPorts());
+        System.out.println("Control remoto: " + this.isRemote());
+        System.out.println("Bluetooth: " + this.isBluetooth());
+        System.out.println("Serial: " + this.getSerial());
     }
 
     @Override
-    public Object clone() {
-        ConcretePrototype1 clone = new ConcretePrototype1();
-        clone.setAttribute1(this.getAttribute1());
-        clone.setAttribute2(this.getAttribute2());
-        clone.setAttribute3(this.getAttribute3());
-        clone.setAttribute4(this.getAttribute4());
-        clone.setAttribute5(this.getAttribute5());
-        clone.setAttribute6(this.getAttribute6());
-        clone.setAttribute7(this.getAttribute7());
+    public TelevisorSmart clone() {
+        TelevisorSmart clone = new TelevisorSmart();
+        clone.setOs(this.getOs());
+        clone.setOsVersion(this.getOsVersion());
+        clone.setInches(this.getInches());
+        clone.setResolution(this.getResolution());
+        clone.setHdmiPort(this.isHdmiPort());
+        clone.setUsbPorts(this.getUsbPorts());
+        clone.setRemote(this.isRemote());
+        clone.setBluetooth(this.isBluetooth());
+        clone.setSerial(this.getSerial());
         return clone;
     }
 }
