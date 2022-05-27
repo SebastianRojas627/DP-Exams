@@ -1,4 +1,4 @@
-package behavioral.interpreter.structure;
+package interpreter.structure;
 
 public class TerminalExpressionB extends AbstractExpression {
     /**

@@ -1,4 +1,4 @@
-package creational.prototype.structure;
+package prototype.structure;
 
 public class Client {
     public static void main(String[] args) {

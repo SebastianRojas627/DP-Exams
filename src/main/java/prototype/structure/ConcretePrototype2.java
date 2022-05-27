@@ -1,4 +1,4 @@
-package creational.prototype.structure;
+package prototype.structure;
 
 public class ConcretePrototype2 implements IPrototype {
     private String attribute1;

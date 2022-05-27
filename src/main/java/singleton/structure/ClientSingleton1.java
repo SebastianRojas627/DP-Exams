@@ -1,4 +1,4 @@
-package creational.singleton.structure;
+package singleton.structure;
 
 public class ClientSingleton1 {
 

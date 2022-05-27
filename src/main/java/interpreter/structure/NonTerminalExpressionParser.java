@@ -1,4 +1,4 @@
-package behavioral.interpreter.structure;
+package interpreter.structure;
 
 import java.util.ArrayList;
 import java.util.List;
