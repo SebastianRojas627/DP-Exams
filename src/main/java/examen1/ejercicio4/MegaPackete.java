@@ -3,6 +3,11 @@ package examen1.ejercicio4;
 public class MegaPackete extends ComboBuilder{
 
     @Override
+    public void defineCombo() {
+        System.out.println("\n Combo Mega Paquete");
+    }
+
+    @Override
     public void buildPipocas() {
         product.setPipocas("pipocas extragrandes");
     }
@@ -14,6 +19,6 @@ public class MegaPackete extends ComboBuilder{
 
     @Override
     public void buildChocolate() {
-        product.setPipocas("2 chocolates grandes");
+        product.setChocolate("2 chocolates grandes");
     }
 }

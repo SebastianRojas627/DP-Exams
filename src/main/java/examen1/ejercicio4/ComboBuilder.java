@@ -12,6 +12,8 @@ public abstract class ComboBuilder {
         this.product = new Combos();
     }
 
+    public abstract void defineCombo();
+
     public abstract void buildPipocas();
 
     public abstract void buildRefrescos();
